@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>步长</title>
+    <style>
+        @keyframes move {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 120px;
+            }
+        }
+
+        div {
+            overflow: hidden;
+            width: 0;
+            height: 30px;
+            /* 强制让文字一行显示 */
+            white-space: nowrap;
+            background-color: yellow;
+            font-size: 20px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* forwards 让动画结束停留在终点 */
+            animation: move 3s steps(6) forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <div>你是一个傻逼</div>
+</body>
+
+</html>
